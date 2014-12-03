@@ -17,7 +17,7 @@ according to your preferences.
 
 ## Table of contents
 
-* [2 Spaces for indention](#2-spaces-for-indention)
+* [4 Spaces for indention](#4-spaces-for-indention)
 * [Newlines](#newlines)
 * [No trailing whitespace](#no-trailing-whitespace)
 * [Use Semicolons](#use-semicolons)
@@ -36,9 +36,9 @@ according to your preferences.
 * [Object.freeze, Object.preventExtensions, Object.seal, with, eval](#objectfreeze-objectpreventextensions-objectseal-with-eval)
 * [Getters and setters](#getters-and-setters)
 
-## 2 Spaces for indention
+## 4 Spaces for indention
 
-Use 2 spaces for indenting your code and swear an oath to never mix tabs and
+Use 4 spaces for indenting your code and swear an oath to never mix tabs and
 spaces - a special kind of hell is awaiting you otherwise.
 
 ## Newlines
@@ -306,9 +306,9 @@ if (a == '') {
 
 [comparisonoperators]: https://developer.mozilla.org/en/JavaScript/Reference/Operators/Comparison_Operators
 
-## Use multi-line ternary operator
+## Optionally use the multi-line ternary operator
 
-The ternary operator should not be used on a single line. Split it up into multiple lines instead.
+The ternary operator can be used on a single line if it's short. Otherwise split it up into multiple lines instead.
 
 *Right:*
 
@@ -318,7 +318,7 @@ var foo = (a === b)
   : 2;
 ```
 
-*Wrong:*
+*Also ok:*
 
 ```js
 var foo = (a === b) ? 1 : 2;
@@ -426,7 +426,7 @@ function isPercentage(val) {
 }
 ```
 
-## Name your closures
+## Optional: name your closures
 
 Feel free to give your closures a name. It shows that you care about them, and
 will produce better stack traces, heap and cpu profiles.
@@ -439,7 +439,7 @@ req.on('end', function onEnd() {
 });
 ```
 
-*Wrong:*
+*Also ok:*
 
 ```js
 req.on('end', function() {
@@ -447,9 +447,9 @@ req.on('end', function() {
 });
 ```
 
-## No nested closures
+## Nested closures are ok
 
-Use closures, but don't nest them. Otherwise your code will become a mess.
+Use closures, and you can also nest them. But don't do it too much, otherwise your code will become a mess.
 
 *Right:*
 
@@ -463,7 +463,7 @@ function afterConnect() {
 }
 ```
 
-*Wrong:*
+*Ok:*
 
 ```js
 setTimeout(function() {
