@@ -31,7 +31,7 @@ according to your preferences.
 * [Use UPPERCASE for Constants](#use-uppercase-for-constants)
 * [Object / Array creation](#object--array-creation)
 * [Use the === operator](#use-the--operator)
-* [Optionally use multi-line ternary operator](#optionally-use-multi-line-ternary-operator)
+* [Optionally use the multi-line ternary operator](#optionally-use-the-multi-line-ternary-operator)
 * [Use slashes for comments](#use-slashes-for-comments)
 * [Object.freeze, Object.preventExtensions, Object.seal, with, eval](#objectfreeze-objectpreventextensions-objectseal-with-eval)
 * [Getters and setters](#getters-and-setters)
